@@ -43,11 +43,18 @@ const editors: ILinuxExternalEditor[] = [
       '/snap/bin/code',
       '/usr/bin/code',
       '/mnt/c/Program Files/Microsoft VS Code/bin/code',
+      '/var/lib/flatpak/app/com.visualstudio.code',
+      '.local/share/flatpak/app/com.visualstudio.code',
     ],
   },
   {
     name: 'Visual Studio Code (Insiders)',
-    paths: ['/snap/bin/code-insiders', '/usr/bin/code-insiders'],
+    paths: [
+      '/snap/bin/code-insiders',
+      '/usr/bin/code-insiders',
+      '/var/lib/flatpak/app/com.visualstudio.code.insiders',
+      '.local/share/flatpak/app/com.visualstudio.code.insiders'
+    ],
   },
   {
     name: 'VSCodium',
@@ -55,6 +62,7 @@ const editors: ILinuxExternalEditor[] = [
       '/usr/bin/codium',
       '/var/lib/flatpak/app/com.vscodium.codium',
       '/usr/share/vscodium-bin/bin/codium',
+      '.local/share/flatpak/app/com.vscodium.codium',
     ],
   },
   {
